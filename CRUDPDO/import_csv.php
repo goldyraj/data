@@ -8,13 +8,12 @@ if (isset($_POST['import'])) {
     if (isset($_FILES['csv_file']['tmp_name']) && $_FILES['csv_file']['error'] === UPLOAD_ERR_OK) {
         $file = fopen($_FILES['csv_file']['tmp_name'], "r");
         $rowCount = 0;
-        $headerSkipped = false;
+        $lineNo = 0;
 
         while (($row = fgetcsv($file, 1000, ",")) !== FALSE) {
-            if (!$headerSkipped) { 
-                $headerSkipped = true; // skip header row
-                continue;
-            }
+            $lineNo++;
+
+            if ($lineNo == 1) continue; // skip header row
 
             $name  = trim($row[0]);
             $email = trim($row[1]);
@@ -22,15 +21,15 @@ if (isset($_POST['import'])) {
 
             // === VALIDATION ===
             if (empty($name)) {
-                $errors[] = "Row $rowCount: Name required.";
+                $errors[] = "Row $lineNo: Name is required.";
                 continue;
             }
             if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-                $errors[] = "Row $rowCount: Invalid email.";
+                $errors[] = "Row $lineNo: Invalid email.";
                 continue;
             }
             if (!preg_match('/^[0-9]{10}$/', $phone)) {
-                $errors[] = "Row $rowCount: Phone must be 10 digits.";
+                $errors[] = "Row $lineNo: Phone must be exactly 10 digits.";
                 continue;
             }
 
@@ -44,9 +43,9 @@ if (isset($_POST['import'])) {
                 $rowCount++;
             } catch (PDOException $e) {
                 if ($e->getCode() == 23000) {
-                    $errors[] = "Row $rowCount: Email already exists.";
+                    $errors[] = "Row $lineNo: Email already exists.";
                 } else {
-                    $errors[] = "Row $rowCount: DB error.";
+                    $errors[] = "Row $lineNo: DB error - " . $e->getMessage();
                 }
             }
         }
@@ -85,13 +84,13 @@ if (isset($_POST['import'])) {
 <form method="POST" enctype="multipart/form-data">
   <div class="mb-3">
     <label>Select CSV File</label>
-    <input type="file" name="csv_file" class="form-control" required>
+    <input type="file" name="csv_file" class="form-control" accept=".csv" required>
   </div>
   <button type="submit" name="import" class="btn btn-primary">Import</button>
   <a href="index.php" class="btn btn-secondary">Back</a>
 </form>
 
-<p class="mt-3"><strong>CSV format (first row is header):</strong></p>
+<p class="mt-3"><strong>CSV format (first row = header):</strong></p>
 <pre>
 Name,Email,Phone
 John Doe,john@example.com,9876543210
