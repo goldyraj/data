@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IIM Bodh Gaya</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link href="css/styles.css" rel="stylesheet">
+    <!-- Meta tags for better SEO and mobile display -->
+    <meta name="description" content="Indian Institute of Management Bodh Gaya - A premier business school offering world-class management education.">
+    <meta name="keywords" content="IIM, Bodh Gaya, MBA, Management, Business School, Education, India">
+    <meta name="author" content="IIM Bodh Gaya">
+</head>
+<body>
+    <!-- Top Bar (Line 1) -->
+    <div class="top-bar">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Left side: Social media icons -->
+                <div class="col-md-6 social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                </div>
+                <!-- Right side: Menu links -->
+                <div class="col-md-6 top-menu">
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item"><a href="#" class="nav-link">Program</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">ERP</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Admission</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Alumni</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Main Navigation (Line 2) -->
+    <nav class="navbar navbar-expand-lg navbar-dark main-nav">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">IIM Bodh Gaya</a>
+            
+            <!-- Mobile Toggle Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Navigation Items -->
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <!-- Institute Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="instituteDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Institute</a>
+                        <ul class="dropdown-menu" aria-labelledby="instituteDropdown">
+                            <li><a class="dropdown-item" href="#">About Us</a></li>
+                            <li><a class="dropdown-item" href="#">Leadership</a></li>
+                            <li><a class="dropdown-item" href="#">Campus</a></li>
+                        </ul>
+                    </li>
+                    
+                    <!-- Programs Mega Menu -->
+                    <li class="nav-item dropdown position-static">
+                        <a class="nav-link dropdown-toggle" href="#" id="programsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Programs</a>
+                        <div class="dropdown-menu mega-menu w-100" aria-labelledby="programsDropdown">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <h5>Undergraduate</h5>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">BBA</a></li>
+                                            <li><a href="#">B.Com</a></li>
+                                            <li><a href="#">BCA</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <h5>Postgraduate</h5>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">MBA</a></li>
+                                            <li><a href="#">MCA</a></li>
+                                            <li><a href="#">M.Com</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <h5>Doctoral</h5>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Ph.D in Management</a></li>
+                                            <li><a href="#">Ph.D in Commerce</a></li>
+                                            <li><a href="#">Ph.D in Economics</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <h5>Executive Education</h5>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Executive MBA</a></li>
+                                            <li><a href="#">Certificate Programs</a></li>
+                                            <li><a href="#">Online Courses</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <!-- MDP Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="mdpDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">MDP</a>
+                        <ul class="dropdown-menu" aria-labelledby="mdpDropdown">
+                            <li><a class="dropdown-item" href="#">Corporate Programs</a></li>
+                            <li><a class="dropdown-item" href="#">Open Programs</a></li>
+                            <li><a class="dropdown-item" href="#">Customized Programs</a></li>
+                        </ul>
+                    </li>
+                    
+                    <!-- International Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="internationalDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">International</a>
+                        <ul class="dropdown-menu" aria-labelledby="internationalDropdown">
+                            <li><a class="dropdown-item" href="#">Exchange Programs</a></li>
+                            <li><a class="dropdown-item" href="#">International Partners</a></li>
+                            <li><a class="dropdown-item" href="#">Global Initiatives</a></li>
+                        </ul>
+                    </li>
+                    
+                    <!-- Faculty & Research Mega Menu -->
+                    <li class="nav-item dropdown position-static">
+                        <a class="nav-link dropdown-toggle" href="#" id="facultyDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Faculty & Research</a>
+                        <div class="dropdown-menu mega-menu w-100" aria-labelledby="facultyDropdown">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <h5>Faculty</h5>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Faculty Directory</a></li>
+                                            <li><a href="#">Academic Departments</a></li>
+                                            <li><a href="#">Faculty Achievements</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h5>Research</h5>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Research Centers</a></li>
+                                            <li><a href="#">Publications</a></li>
+                                            <li><a href="#">Working Papers</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h5>Resources</h5>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Library</a></li>
+                                            <li><a href="#">Research Databases</a></li>
+                                            <li><a href="#">Academic Journals</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <!-- Placement Mega Menu -->
+                    <li class="nav-item dropdown position-static">
+                        <a class="nav-link dropdown-toggle" href="#" id="placementDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Placement</a>
+                        <div class="dropdown-menu mega-menu w-100" aria-labelledby="placementDropdown">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <h5>For Students</h5>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Placement Process</a></li>
+                                            <li><a href="#">Career Resources</a></li>
+                                            <li><a href="#">Internships</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h5>For Recruiters</h5>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Why Recruit From Us</a></li>
+                                            <li><a href="#">Recruitment Process</a></li>
+                                            <li><a href="#">Past Recruiters</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h5>Placement Statistics</h5>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Placement Reports</a></li>
+                                            <li><a href="#">Salary Trends</a></li>
+                                            <li><a href="#">Industry Distribution</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <!-- E-Cell Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="ecellDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">E-Cell</a>
+                        <ul class="dropdown-menu" aria-labelledby="ecellDropdown">
+                            <li><a class="dropdown-item" href="#">About E-Cell</a></li>
+                            <li><a class="dropdown-item" href="#">Initiatives</a></li>
+                            <li><a class="dropdown-item" href="#">Startups</a></li>
+                        </ul>
+                    </li>
+                    
+                    <!-- Student Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="studentDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Student</a>
+                        <ul class="dropdown-menu" aria-labelledby="studentDropdown">
+                            <li><a class="dropdown-item" href="#">Student Life</a></li>
+                            <li><a class="dropdown-item" href="#">Clubs & Committees</a></li>
+                            <li><a class="dropdown-item" href="#">Facilities</a></li>
+                        </ul>
+                    </li>
+                    
+                    <!-- Event Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="eventDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Event</a>
+                        <ul class="dropdown-menu" aria-labelledby="eventDropdown">
+                            <li><a class="dropdown-item" href="#">Upcoming Events</a></li>
+                            <li><a class="dropdown-item" href="#">Past Events</a></li>
+                            <li><a class="dropdown-item" href="#">Annual Festivals</a></li>
+                        </ul>
+                    </li>
+                    
+                    <!-- Conference Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="conferenceDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Conference</a>
+                        <ul class="dropdown-menu" aria-labelledby="conferenceDropdown">
+                            <li><a class="dropdown-item" href="#">Upcoming Conferences</a></li>
+                            <li><a class="dropdown-item" href="#">Call for Papers</a></li>
+                            <li><a class="dropdown-item" href="#">Past Proceedings</a></li>
+                        </ul>
+                    </li>
+                    
+                    <!-- Mindfulness Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="mindfulnessDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Mindfulness</a>
+                        <ul class="dropdown-menu" aria-labelledby="mindfulnessDropdown">
+                            <li><a class="dropdown-item" href="#">Programs</a></li>
+                            <li><a class="dropdown-item" href="#">Resources</a></li>
+                            <li><a class="dropdown-item" href="#">Workshops</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <!-- Search Form -->
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- Full Page Slider Container -->
+    <div class="slider-container">
+        <!-- Carousel -->
+        <div id="fullPageSlider" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#fullPageSlider" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#fullPageSlider" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#fullPageSlider" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#fullPageSlider" data-bs-slide-to="3"></button>
+            </div>
+            
+            <!-- Slides -->
+            <div class="carousel-inner">
+                <!-- Image Slide 1 -->
+                <div class="carousel-item active image-slide">
+                    <img src="media/image1.jpg" class="d-block w-100" alt="IIM Bodh Gaya Campus">
+                    <div class="carousel-caption">
+                        <h2>Welcome to IIM Bodh Gaya</h2>
+                        <p>Nurturing Wisdom. Inspiring Excellence.</p>
+                        <a href="#" class="btn btn-primary">Explore Campus</a>
+                    </div>
+                </div>
+                
+                <!-- Image Slide 2 -->
+                <div class="carousel-item image-slide">
+                    <img src="https://iimbg.ac.in/wp-content/uploads/2025/08/banner-web-ind-1366x466.png" class="d-block w-100" alt="IIM Bodh Gaya Academic Block">
+                    <div class="carousel-caption">
+                        <h2>Academic Excellence</h2>
+                        <p>Transforming education through innovation and research</p>
+                        <a href="#" class="btn btn-primary">Academic Programs</a>
+                    </div>
+                </div>
+                
+                <!-- Image Slide 3 -->
+                <div class="carousel-item image-slide">
+                    <img src="media/placeholder.jpg" class="d-block w-100" alt="IIM Bodh Gaya Library">
+                    <div class="carousel-caption">
+                        <h2>World-Class Infrastructure</h2>
+                        <p>State-of-the-art facilities for holistic development</p>
+                        <a href="#" class="btn btn-primary">Campus Tour</a>
+                    </div>
+                </div>
+                
+                <!-- Image Slide 4 -->
+                <div class="carousel-item image-slide">
+                    <img src="media/placeholder.jpg" class="d-block w-100" alt="IIM Bodh Gaya Students">
+                    <div class="carousel-caption">
+                        <h2>Student Life at IIM Bodh Gaya</h2>
+                        <p>Fostering leadership, creativity and innovation</p>
+                        <a href="#" class="btn btn-primary">Student Activities</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#fullPageSlider" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#fullPageSlider" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Advertisements/Notifications & Admission Section -->
+    <section class="ads-admission-section py-4">
+        <div class="container">
+            <div class="row">
+                <!-- Left side: Advertisements/Notifications -->
+                <div class="col-lg-7 mb-4 mb-lg-0">
+                    <div class="card h-100 notifications-card">
+                        <div class="card-header bg-primary text-white">
+                            <h4 class="mb-0"><i class="fas fa-bullhorn me-2"></i>Advertisements / Notifications</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="notification-scroll">
+                                <div class="notification-item">
+                                    <span class="notification-date">15 Jun 2023</span>
+                                    <a href="#" class="notification-link">Admission Open for MBA 2023-25 Batch</a>
+                                    <span class="badge bg-danger ms-2">New</span>
+                                </div>
+                                <div class="notification-item">
+                                    <span class="notification-date">10 Jun 2023</span>
+                                    <a href="#" class="notification-link">International Conference on Management Practices</a>
+                                </div>
+                                <div class="notification-item">
+                                    <span class="notification-date">05 Jun 2023</span>
+                                    <a href="#" class="notification-link">Faculty Development Program - Registration Open</a>
+                                </div>
+                                <div class="notification-item">
+                                    <span class="notification-date">01 Jun 2023</span>
+                                    <a href="#" class="notification-link">Summer Internship Results Announced</a>
+                                </div>
+                                <div class="notification-item">
+                                    <span class="notification-date">25 May 2023</span>
+                                    <a href="#" class="notification-link">Campus Recruitment Drive - Schedule Announced</a>
+                                </div>
+                            </div>
+                            <div class="text-end mt-3">
+                                <a href="#" class="btn btn-outline-primary btn-sm">View All Notifications</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right side: Admission CTA -->
+                <div class="col-lg-5">
+                    <div class="card h-100 admission-card">
+                        <div class="card-body text-center">
+                            <div class="admission-content">
+                                <h3 class="admission-title">Admissions Open</h3>
+                                <h4 class="admission-subtitle">MBA 2023-25 Batch</h4>
+                                <p class="admission-text">Join one of India's premier management institutes and transform your career with our flagship MBA program.</p>
+                                <ul class="admission-highlights">
+                                    <li><i class="fas fa-check-circle"></i> World-class faculty</li>
+                                    <li><i class="fas fa-check-circle"></i> Industry-focused curriculum</li>
+                                    <li><i class="fas fa-check-circle"></i> 100% placement assistance</li>
+                                    <li><i class="fas fa-check-circle"></i> Global exposure</li>
+                                </ul>
+                                <a href="#" class="btn btn-primary btn-lg admission-btn">Apply Now</a>
+                                <p class="admission-deadline">Application Deadline: July 31, 2023</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chairperson & Director Profile Section -->
+    <section class="profile-section py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Chairperson Profile -->
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="profile-card h-100">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <div class="profile-image">
+                                    <img src="media/placeholder.jpg" alt="Chairperson" class="img-fluid rounded-start">
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="profile-content">
+                                    <h3 class="profile-name">Dr. Vinita Sahay</h3>
+                                    <h5 class="profile-designation">Chairperson, IIM Bodh Gaya</h5>
+                                    <div class="profile-divider"></div>
+                                    <p class="profile-message">"At IIM Bodh Gaya, we are committed to academic excellence and creating future leaders who will transform the business landscape with innovation and integrity."</p>
+                                    <a href="#" class="btn btn-outline-primary btn-sm">Read Message</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Director Profile -->
+                <div class="col-lg-6">
+                    <div class="profile-card h-100">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <div class="profile-image">
+                                    <img src="media/placeholder.jpg" alt="Director" class="img-fluid rounded-start">
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="profile-content">
+                                    <h3 class="profile-name">Dr. Rajiv Sharma</h3>
+                                    <h5 class="profile-designation">Director, IIM Bodh Gaya</h5>
+                                    <div class="profile-divider"></div>
+                                    <p class="profile-message">"Our vision is to develop global leaders with a strong foundation in Indian ethos and values. We strive to create an environment that fosters critical thinking and innovation."</p>
+                                    <a href="#" class="btn btn-outline-primary btn-sm">Read Message</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- IIM Bodh Gaya Info Section -->
+    <section class="info-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="info-image">
+                        <img src="media/placeholder.jpg" alt="IIM Bodh Gaya Campus" class="img-fluid rounded shadow">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="info-content">
+                        <h2 class="section-title">About IIM Bodh Gaya</h2>
+                        <div class="section-divider"></div>
+                        <p class="info-text">Indian Institute of Management Bodh Gaya is one of the premier management institutes in India. Established in 2015, IIM Bodh Gaya is the 16th IIM set up by the Ministry of Education, Government of India.</p>
+                        
+                        <h4 class="info-subtitle">Vision</h4>
+                        <p class="info-text">To develop leaders with entrepreneurial and critical thinking abilities, capable of transforming organizations and creating a positive impact on society.</p>
+                        
+                        <h4 class="info-subtitle">Mission</h4>
+                        <p class="info-text">To provide quality management education through contemporary curriculum, employing innovative teaching methods supported by strong industry experience and world-class research.</p>
+                        
+                        <a href="#" class="btn btn-primary mt-3">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Publications Section -->
+    <section class="publications-section py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Research & Publications</h2>
+                <div class="section-divider mx-auto"></div>
+                <p class="lead">Advancing knowledge through cutting-edge research</p>
+            </div>
+            
+            <div class="row">
+                <!-- Publications Stats -->
+                <div class="col-lg-4 mb-4">
+                    <div class="pub-stats-card h-100">
+                        <div class="card-body text-center">
+                            <div class="pub-stat-item mb-4">
+                                <div class="pub-stat-circle">
+                                    <div class="pub-stat-value">242</div>
+                                </div>
+                                <h4 class="pub-stat-label">Publications</h4>
+                            </div>
+                            <div class="pub-stat-row">
+                                <div class="row">
+                                    <div class="col-6 mb-4">
+                                        <div class="pub-stat-small">
+                                            <div class="pub-stat-number">120+</div>
+                                            <div class="pub-stat-text">Journal Articles</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 mb-4">
+                                        <div class="pub-stat-small">
+                                            <div class="pub-stat-number">85+</div>
+                                            <div class="pub-stat-text">Conference Papers</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="pub-stat-small">
+                                            <div class="pub-stat-number">25+</div>
+                                            <div class="pub-stat-text">Book Chapters</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="pub-stat-small">
+                                            <div class="pub-stat-number">12+</div>
+                                            <div class="pub-stat-text">Books Published</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Recent Publications -->
+                <div class="col-lg-8 mb-4">
+                    <div class="pub-list-card h-100">
+                        <div class="card-header bg-primary text-white">
+                            <h3 class="mb-0">Recent Publications</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="pub-list">
+                                <div class="pub-item">
+                                    <div class="pub-meta">
+                                        <span class="pub-journal">Journal of Business Research</span>
+                                        <span class="pub-date">2023</span>
+                                    </div>
+                                    <h5 class="pub-title">Impact of Digital Transformation on Business Model Innovation: A Study of Indian Firms</h5>
+                                    <p class="pub-authors">Kumar, A., Singh, R., & Sharma, P.</p>
+                                </div>
+                                <div class="pub-item">
+                                    <div class="pub-meta">
+                                        <span class="pub-journal">International Journal of Management</span>
+                                        <span class="pub-date">2023</span>
+                                    </div>
+                                    <h5 class="pub-title">Sustainable Supply Chain Management Practices in Emerging Economies</h5>
+                                    <p class="pub-authors">Gupta, S., Verma, R., & Das, K.</p>
+                                </div>
+                                <div class="pub-item">
+                                    <div class="pub-meta">
+                                        <span class="pub-journal">Journal of Marketing Research</span>
+                                        <span class="pub-date">2022</span>
+                                    </div>
+                                    <h5 class="pub-title">Consumer Behavior in Digital Marketplaces: A Longitudinal Study</h5>
+                                    <p class="pub-authors">Mishra, D., Patel, S., & Joshi, N.</p>
+                                </div>
+                                <div class="pub-item">
+                                    <div class="pub-meta">
+                                        <span class="pub-journal">Strategic Management Journal</span>
+                                        <span class="pub-date">2022</span>
+                                    </div>
+                                    <h5 class="pub-title">Strategic Agility and Organizational Resilience During Crisis</h5>
+                                    <p class="pub-authors">Sharma, R., Kapoor, A., & Mehta, V.</p>
+                                </div>
+                            </div>
+                            <div class="text-center mt-4">
+                                <a href="#" class="btn btn-outline-primary">View All Publications</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Placement Statistics Section -->
+    <section class="placement-section py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Placement Statistics</h2>
+                <div class="section-divider mx-auto"></div>
+                <p class="lead">Our track record of excellence in placements</p>
+            </div>
+            
+            <div class="row justify-content-center">
+                <!-- Final Placement Stats -->
+                <div class="col-md-8 mb-4">
+                    <div class="stats-card h-100">
+                        <div class="card-header bg-primary text-white">
+                            <h3 class="mb-0">Final Placement</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="row text-center">
+                                <div class="col-md-3 col-6 mb-4">
+                                    <div class="stat-circle">
+                                        <div class="stat-value" data-start="20" data-end="25" data-suffix="+">20<span class="plus">+</span></div>
+                                    </div>
+                                    <h5 class="stat-label">Placement Rate</h5>
+                                </div>
+                                <div class="col-md-3 col-6 mb-4">
+                                    <div class="stat-circle">
+                                        <div class="stat-value" data-start="100" data-end="150" data-suffix="+">100<span class="plus">+</span></div>
+                                    </div>
+                                    <h5 class="stat-label">Sectors</h5>
+                                </div>
+                                <div class="col-md-3 col-6">
+                                    <div class="stat-circle">
+                                        <div class="stat-value" data-start="100" data-end="150" data-suffix="+">100<span class="plus">+</span></div>
+                                    </div>
+                                    <h5 class="stat-label">Companies</h5>
+                                </div>
+                                <div class="col-md-3 col-6">
+                                    <div class="stat-circle">
+                                        <div class="stat-value" data-start="10" data-end="18" data-suffix=" LPA">10<span class="text-small">LPA</span></div>
+                                    </div>
+                                    <h5 class="stat-label">Avg. CTC</h5>
+                                </div>
+                            </div>
+                            <div class="text-center mt-4">
+                                <p class="mb-3">Our students have been placed in top companies across various sectors including Consulting, Finance, IT, Manufacturing, and more.</p>
+                                <a href="#" class="btn btn-outline-primary">View Detailed Report</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News & Events Section -->
+    <section class="news-events-section py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">IIM Bodh Gaya News & Events</h2>
+                <div class="section-divider mx-auto"></div>
+                <p class="lead">Stay updated with the latest happenings at our campus</p>
+            </div>
+            
+            <div class="row">
+                <!-- News Card 1 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="news-card">
+                        <div class="news-img-container">
+                            <div class="news-date">15 Jun</div>
+                            <img src="media/placeholder.jpg" alt="Conference Event" class="img-fluid news-img">
+                            <div class="news-overlay">
+                                <a href="#" class="btn btn-light btn-sm">Read More</a>
+                            </div>
+                        </div>
+                        <div class="news-content">
+                            <h4 class="news-title">International Management Conference 2023</h4>
+                            <p class="news-text">IIM Bodh Gaya hosted the annual International Management Conference with participants from over 20 countries.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- News Card 2 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="news-card">
+                        <div class="news-img-container">
+                            <div class="news-date">28 May</div>
+                            <img src="media/placeholder.jpg" alt="Workshop Event" class="img-fluid news-img">
+                            <div class="news-overlay">
+                                <a href="#" class="btn btn-light btn-sm">Read More</a>
+                            </div>
+                        </div>
+                        <div class="news-content">
+                            <h4 class="news-title">Leadership Workshop Series</h4>
+                            <p class="news-text">A series of workshops on leadership skills and entrepreneurial mindset conducted by industry experts.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- News Card 3 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="news-card">
+                        <div class="news-img-container">
+                            <div class="news-date">10 Apr</div>
+                            <img src="media/placeholder.jpg" alt="Cultural Event" class="img-fluid news-img">
+                            <div class="news-overlay">
+                                <a href="#" class="btn btn-light btn-sm">Read More</a>
+                            </div>
+                        </div>
+                        <div class="news-content">
+                            <h4 class="news-title">Annual Cultural Festival</h4>
+                            <p class="news-text">Students showcased their talents in music, dance, and theater during the annual cultural extravaganza.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-4">
+                <a href="#" class="btn btn-outline-primary">View All News & Events</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+    <script>
+    window.addEventListener("scroll", function () {
+        const navbar = document.querySelector(".main-nav");
+        if (window.scrollY > 50) {
+            navbar.classList.add("navbar-scrolled");
+        } else {
+            navbar.classList.remove("navbar-scrolled");
+        }
+    });
+</script>
+
+</body>
+</html>

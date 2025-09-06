@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Page Slider</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Top Bar (Line 1) -->
+    <div class="top-bar">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Left side: Social media icons -->
+                <div class="col-md-6 social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                </div>
+                <!-- Right side: Menu links -->
+                <div class="col-md-6 top-menu">
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item"><a href="#" class="nav-link">Program</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">ERP</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Admission</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Alumni</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Main Navigation (Line 2) -->
+    <nav class="navbar navbar-expand-lg navbar-dark main-nav">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">LOGO</a>
+            
+            <!-- Mobile Toggle Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Navigation Items -->
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <!-- Institute Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="instituteDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Institute</a>
+                        <ul class="dropdown-menu" aria-labelledby="instituteDropdown">
+                            <li><a class="dropdown-item" href="#">About Us</a></li>
+                            <li><a class="dropdown-item" href="#">Leadership</a></li>
+                            <li><a class="dropdown-item" href="#">Campus</a></li>
+                        </ul>
+                    </li>
+                    
+                    <!-- Programs Mega Menu -->
+                    <li class="nav-item dropdown position-static">
+                        <a class="nav-link dropdown-toggle" href="#" id="programsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Programs</a>
+                        <div class="dropdown-menu mega-menu w-100" aria-labelledby="programsDropdown">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <h5>Undergraduate</h5>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">BBA</a></li>
+                                            <li><a href="#">B.Com</a></li>
+                                            <li><a href="#">BCA</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <h5>Postgraduate</h5>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">MBA</a></li>
+                                            <li><a href="#">MCA</a></li>
+                                            <li><a href="#">M.Com</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <h5>Doctoral</h5>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Ph.D in Management</a></li>
+                                            <li><a href="#">Ph.D in Commerce</a></li>
+                                            <li><a href="#">Ph.D in Economics</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <h5>Executive Education</h5>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Executive MBA</a></li>
+                                            <li><a href="#">Certificate Programs</a></li>
+                                            <li><a href="#">Online Courses</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <!-- MDP Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="mdpDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">MDP</a>
+                        <ul class="dropdown-menu" aria-labelledby="mdpDropdown">
+                            <li><a class="dropdown-item" href="#">Corporate Programs</a></li>
+                            <li><a class="dropdown-item" href="#">Open Programs</a></li>
+                            <li><a class="dropdown-item" href="#">Customized Programs</a></li>
+                        </ul>
+                    </li>
+                    
+                    <!-- International Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="internationalDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">International</a>
+                        <ul class="dropdown-menu" aria-labelledby="internationalDropdown">
+                            <li><a class="dropdown-item" href="#">Exchange Programs</a></li>
+                            <li><a class="dropdown-item" href="#">International Partners</a></li>
+                            <li><a class="dropdown-item" href="#">Global Initiatives</a></li>
+                        </ul>
+                    </li>
+                    
+                    <!-- Faculty & Research Mega Menu -->
+                    <li class="nav-item dropdown position-static">
+                        <a class="nav-link dropdown-toggle" href="#" id="facultyDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Faculty & Research</a>
+                        <div class="dropdown-menu mega-menu w-100" aria-labelledby="facultyDropdown">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <h5>Faculty</h5>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Faculty Directory</a></li>
+                                            <li><a href="#">Academic Departments</a></li>
+                                            <li><a href="#">Faculty Achievements</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h5>Research</h5>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Research Centers</a></li>
+                                            <li><a href="#">Publications</a></li>
+                                            <li><a href="#">Working Papers</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h5>Resources</h5>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Library</a></li>
+                                            <li><a href="#">Research Databases</a></li>
+                                            <li><a href="#">Academic Journals</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <!-- Placement Mega Menu -->
+                    <li class="nav-item dropdown position-static">
+                        <a class="nav-link dropdown-toggle" href="#" id="placementDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Placement</a>
+                        <div class="dropdown-menu mega-menu w-100" aria-labelledby="placementDropdown">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <h5>For Students</h5>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Placement Process</a></li>
+                                            <li><a href="#">Career Resources</a></li>
+                                            <li><a href="#">Internships</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h5>For Recruiters</h5>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Why Recruit From Us</a></li>
+                                            <li><a href="#">Recruitment Process</a></li>
+                                            <li><a href="#">Past Recruiters</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h5>Placement Statistics</h5>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Placement Reports</a></li>
+                                            <li><a href="#">Salary Trends</a></li>
+                                            <li><a href="#">Industry Distribution</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <!-- E-Cell Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="ecellDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">E-Cell</a>
+                        <ul class="dropdown-menu" aria-labelledby="ecellDropdown">
+                            <li><a class="dropdown-item" href="#">About E-Cell</a></li>
+                            <li><a class="dropdown-item" href="#">Initiatives</a></li>
+                            <li><a class="dropdown-item" href="#">Startups</a></li>
+                        </ul>
+                    </li>
+                    
+                    <!-- Student Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="studentDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Student</a>
+                        <ul class="dropdown-menu" aria-labelledby="studentDropdown">
+                            <li><a class="dropdown-item" href="#">Student Life</a></li>
+                            <li><a class="dropdown-item" href="#">Clubs & Committees</a></li>
+                            <li><a class="dropdown-item" href="#">Facilities</a></li>
+                        </ul>
+                    </li>
+                    
+                    <!-- Event Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="eventDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Event</a>
+                        <ul class="dropdown-menu" aria-labelledby="eventDropdown">
+                            <li><a class="dropdown-item" href="#">Upcoming Events</a></li>
+                            <li><a class="dropdown-item" href="#">Past Events</a></li>
+                            <li><a class="dropdown-item" href="#">Annual Festivals</a></li>
+                        </ul>
+                    </li>
+                    
+                    <!-- Conference Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="conferenceDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Conference</a>
+                        <ul class="dropdown-menu" aria-labelledby="conferenceDropdown">
+                            <li><a class="dropdown-item" href="#">Upcoming Conferences</a></li>
+                            <li><a class="dropdown-item" href="#">Call for Papers</a></li>
+                            <li><a class="dropdown-item" href="#">Past Proceedings</a></li>
+                        </ul>
+                    </li>
+                    
+                    <!-- Mindfulness Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="mindfulnessDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Mindfulness</a>
+                        <ul class="dropdown-menu" aria-labelledby="mindfulnessDropdown">
+                            <li><a class="dropdown-item" href="#">Programs</a></li>
+                            <li><a class="dropdown-item" href="#">Resources</a></li>
+                            <li><a class="dropdown-item" href="#">Workshops</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <!-- Search Form -->
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- Full Page Slider Container -->
+    <div class="slider-container">
+        <!-- Carousel -->
+        <div id="fullPageSlider" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#fullPageSlider" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#fullPageSlider" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#fullPageSlider" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#fullPageSlider" data-bs-slide-to="3"></button>
+            </div>
+            
+            <!-- Slides -->
+            <div class="carousel-inner">
+                <!-- Video Slide 1 -->
+                <div class="carousel-item active video-slide">
+                    <video class="slide-video" autoplay loop muted>
+                        <source src="media/video1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="carousel-caption">
+                        <h2>Welcome to Our Website</h2>
+                        <p>Discover amazing content with our full-page slider</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+                
+                <!-- Image Slide 2 -->
+                <div class="carousel-item image-slide">
+                    <img src="media/image1.jpg" class="d-block w-100" alt="Slide Image 1">
+                    <div class="carousel-caption">
+                        <h2>Beautiful Imagery</h2>
+                        <p>High-quality images for your viewing pleasure</p>
+                        <a href="#" class="btn btn-primary">Explore</a>
+                    </div>
+                </div>
+                   <!-- Image Slide 3 -->
+                <div class="carousel-item image-slide">
+                    <img src="https://iimbg.ac.in/wp-content/uploads/2025/08/banner-web-ind-1366x466.png" class="d-block w-100" alt="Slide Image 2">
+                    <div class="carousel-caption">
+                        <h2>Innovative Design</h2>
+                        <p>Modern and responsive web experiences</p>
+                        <a href="#" class="btn btn-primary">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+              
+                
+                <!-- Image Slide 4 -->
+                <div class="carousel-item image-slide">
+                    <img src="https://iimbg.ac.in/wp-content/uploads/2025/08/banner-web-ind-1366x466.png" class="d-block w-100" alt="Slide Image 2">
+                    <div class="carousel-caption">
+                       
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#fullPageSlider" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#fullPageSlider" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
