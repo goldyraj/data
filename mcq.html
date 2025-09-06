@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CBT Demo Test</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; background: #f5f7fa; }
+    .container { max-width: 700px; margin: auto; background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+    .question { font-size: 18px; margin-bottom: 10px; }
+    .options { margin-bottom: 20px; }
+    .options label { display: block; margin-bottom: 8px; }
+    .btn { padding: 10px 20px; margin: 5px; border: none; border-radius: 5px; cursor: pointer; }
+    .btn-primary { background: #007bff; color: white; }
+    .btn-secondary { background: #6c757d; color: white; }
+    .btn-success { background: #28a745; color: white; }
+    .btn:disabled { opacity: 0.6; cursor: not-allowed; }
+    .result { font-size: 20px; font-weight: bold; margin-top: 20px; }
+    .answer { margin-top: 10px; font-weight: bold; color: green; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Computer Based Test - Demo (10 Questions)</h2>
+    <div id="quiz"></div>
+    <button class="btn btn-secondary" id="prevBtn" onclick="prevQuestion()">Previous</button>
+    <button class="btn btn-primary" id="nextBtn" onclick="nextQuestion()">Next</button>
+    <button class="btn btn-primary" id="submitBtn" onclick="submitQuiz()" style="display:none">Submit</button>
+    <button class="btn btn-success" id="showAnsBtn" onclick="showAnswer()">Show Answer</button>
+    <div class="result" id="result"></div>
+    <div class="answer" id="answer"></div>
+  </div>
+
+  <script>
+    const quizData = [
+      { q: "1. Synonym of 'Meticulous'?", options: ["Careless", "Thorough", "Rough", "Casual"], answer: 1 },
+      { q: "2. Fill in the blank: The designer worked ____ the project.", options: ["on", "over", "into", "at"], answer: 0 },
+      { q: "3. 20% of 250 = ?", options: ["25", "50", "100", "200"], answer: 1 },
+      { q: "4. Which is a semantic HTML tag?", options: ["div", "span", "article", "b"], answer: 2 },
+      { q: "5. PHP variable starts with?", options: ["!", "#", "$", "&"], answer: 2 },
+      { q: "6. CRUD stands for?", options: ["Create, Read, Update, Delete", "Connect, Run, Upload, Download", "Copy, Rename, Undo, Drop", "Create, Run, Undo, Drop"], answer: 0 },
+      { q: "7. Git command to upload commits?", options: ["git commit", "git push", "git pull", "git upload"], answer: 1 },
+      { q: "8. CorelDraw is used for?", options: ["Video editing", "Vector graphics", "3D modeling", "Web hosting"], answer: 1 },
+      { q: "9. In XAMPP, default Apache port is?", options: ["21", "80", "22", "3306"], answer: 1 },
+      { q: "10. Best response to teammate idea you disagree with?", options: ["Ignore them", "Politely explain with reasons", "Criticize harshly", "Stay silent"], answer: 1 }
+    ];
+
+    let currentQuestion = 0;
+    const userAnswers = Array(quizData.length).fill(null);
+
+    function loadQuestion() {
+      const qData = quizData[currentQuestion];
+      const quizDiv = document.getElementById('quiz');
+      quizDiv.innerHTML = `<div class='question'>${qData.q}</div>`;
+      let optionsHtml = "<div class='options'>";
+      qData.options.forEach((opt, i) => {
+        const checked = userAnswers[currentQuestion] === i ? 'checked' : '';
+        optionsHtml += `<label><input type='radio' name='option' value='${i}' ${checked}> ${opt}</label>`;
+      });
+      optionsHtml += "</div>";
+      quizDiv.innerHTML += optionsHtml;
+
+      document.getElementById('prevBtn').style.display = currentQuestion === 0 ? 'none' : 'inline-block';
+      document.getElementById('nextBtn').style.display = currentQuestion === quizData.length - 1 ? 'none' : 'inline-block';
+      document.getElementById('submitBtn').style.display = currentQuestion === quizData.length - 1 ? 'inline-block' : 'none';
+      document.getElementById('answer').innerHTML = ""; // Clear previous answer
+    }
+
+    function nextQuestion() {
+      saveAnswer();
+      if (currentQuestion < quizData.length - 1) {
+        currentQuestion++;
+        loadQuestion();
+      }
+    }
+
+    function prevQuestion() {
+      saveAnswer();
+      if (currentQuestion > 0) {
+        currentQuestion--;
+        loadQuestion();
+      }
+    }
+
+    function saveAnswer() {
+      const selected = document.querySelector('input[name="option"]:checked');
+      if (selected) {
+        userAnswers[currentQuestion] = parseInt(selected.value);
+      }
+    }
+
+    function submitQuiz() {
+      saveAnswer();
+      let score = 0;
+      quizData.forEach((q, i) => {
+        if (userAnswers[i] === q.answer) score++;
+      });
+      document.getElementById('quiz').style.display = 'none';
+      document.getElementById('prevBtn').style.display = 'none';
+      document.getElementById('nextBtn').style.display = 'none';
+      document.getElementById('submitBtn').style.display = 'none';
+      document.getElementById('showAnsBtn').style.display = 'none';
+      document.getElementById('result').innerHTML = `You scored ${score} / ${quizData.length}`;
+    }
+
+    function showAnswer() {
+      const correctIndex = quizData[currentQuestion].answer;
+      const correctOption = quizData[currentQuestion].options[correctIndex];
+      document.getElementById('answer').innerHTML = `✅ Correct Answer: ${correctOption}`;
+    }
+
+    loadQuestion();
+  </script>
+</body>
+</html>
